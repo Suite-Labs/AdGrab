@@ -1,0 +1,274 @@
+/* --------- ADGRAB FONTS --------- */
+@font-face {
+    font-family: adGrabFontThin;
+    src: url(../fonts/roboto/Roboto-Thin.woff);
+}
+@font-face {
+    font-family: adGrabFontLight;
+    src: url(../fonts/roboto/Roboto-Light.woff);
+}
+@font-face {
+    font-family: adGrabFontRegular;
+    src: url(../fonts/roboto/Roboto-Regular.woff);
+}
+@font-face {
+    font-family: adGrabFontMedium;
+    src: url(../fonts/roboto/Roboto-Medium.woff);
+}
+@font-face {
+    font-family: adGrabFontBold;
+    src: url(../fonts/roboto/Roboto-Bold.woff);
+}
+
+/* --------- GLOBAL STYLE CHOICES ---------- */
+body {
+	font-family: adGrabFontRegular;
+	height: 100%; 
+	width: 100%; 
+	position: absolute;
+	margin: 0;
+}
+
+/* --------- NAV BAR --------- */
+#nav {
+    background-color: #33BEA0;
+    opacity: 0.90;
+    height: 50px;
+    display: block;
+    margin: auto;
+}
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 25px;
+    max-width: 1300px;
+}
+.logo {
+    display: inline-block;
+}
+.links {
+    display: inline-block;
+    float: right;
+}
+#nav img {
+    height: 35px;
+    margin: 7px;
+    float: left;
+}
+/* 
+.logo:not(:hover) .logo-text {
+    display: none;
+}
+*/
+/* .logo:hover */ .logo-text {
+    -webkit-transition-timing-function: ease-in;
+    font-family: adGrabFontMedium;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 18px;
+    float: left;
+    line-height: 50px;
+    vertical-align: middle;
+}
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+}
+#nav li {
+    display: inline;
+    margin-left: 18px;
+    vertical-align: middle;
+    line-height: 50px;
+}
+#nav li a {
+    font-family: adGrabFontMedium;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+#nav li a:hover {
+    color: #C5C5C5;
+    transition: all 0.3s;
+}
+
+/* --------- SECTION ONE --------- */
+.section-one {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background: url(../img/header-background-image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.main-jumbotron-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #535353;
+    z-index: -1;
+    opacity: 0.7;
+}
+.main-jumbotron {
+    display: flex;
+    height: 90%;
+    width: 100%;
+}
+@media only screen and (min-width: 1100px) {
+    .main-jumbotron {
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 993px) {
+    .main-jumbotron {
+        height: 93%;
+    }
+}
+.focal-point {
+    display: block;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+@media only screen and (min-width: 1500px) {
+    .focal-point{
+        margin-top: 13%;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    .focal-point{
+        margin-top: 8%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .focal-point{
+        margin-top: 3%;
+    }
+}
+.center-logo {
+    text-align: center;
+    height: 60%;
+}
+.focal-img {
+    display: inline-block;
+}
+.focal-text {
+    display: inline-block;
+    line-height: 150px;
+    vertical-align: top;
+    font-size: 45px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+@media only screen and (min-width: 1500px) {
+    .focal-text {
+        font-size: 60px;
+        transform: translateY(33px);
+    }
+}
+@media only screen and (max-width: 320px) {
+    .focal-text{
+        font-size: 25px;
+        transform: translateY(-17px);
+    }
+}
+.focal-point img {
+    height: 150px;
+}
+@media only screen and (min-width: 1500px) {
+    .focal-point img {
+        height: 220px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .focal-point img {
+        height: 110px;
+    }
+}
+.focal-text span {
+    font-family: adGrabFontBold;
+}
+.focal-slogan {
+    margin-top: 40px;
+}
+.focal-slogan h4 {
+    text-align: center;
+    font-family: adGrabFontMedium;
+    font-size: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #FFFFFF;
+}
+@media only screen and (min-width: 1500px) {
+    .focal-slogan h4 {
+        font-size: 45px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .focal-slogan h4 {
+        font-size: 30px;
+    }
+}
+.focal-slogan p {
+    font-family: adGrabFontMedium;
+    text-align: center;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #FFFFFF;
+}
+@media only screen and (min-width: 1500px) {
+    .focal-slogan p {
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .focal-slogan p {
+        font-size: 14px;
+    }
+}
+.down-arrow {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* --------- BOUNCE EFFECT ON DOWN ARROW --------- */
+.arrow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 55px;
+  margin-top: 50px;
+  width: 33px;
+  height: 34px;
+  cursor: pointer;
+  animation: bounce 0.8s infinite alternate;
+  -webkit-animation: bounce 0.8s infinite alternate;
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+.arrow img {
+    height: 30px;
+}
+
+
+
+
+
