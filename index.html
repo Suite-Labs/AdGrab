@@ -77,7 +77,7 @@
           <ul>
             <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Blog</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+            <li><a class="grey-text text-lighten-3 modal-trigger" href="#modal1">Contact</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Work</a></li>
           </ul>
         </div>
@@ -87,6 +87,35 @@
       <div class="container"> © 2017 All Rights Reserved </div>
     </div>
   </footer>
+  <!-- MODAL -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Contact Us</h4>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="inputFirstName" type="text" class="validate">
+          <label for="inputFirstName">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="inputLastName" type="text" class="validate">
+          <label for="inputLastName">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="inputTextArea" class="materialize-textarea"></textarea>
+          <label for="inputTextArea">Message</label>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer"> <a href="#!" id="contactBtn" class="modal-action modal-close waves-effect waves-green btn-flat">Send</a> </div>
+  </div>
   <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/site.js"></script>
